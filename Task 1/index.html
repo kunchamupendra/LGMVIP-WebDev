@@ -1,0 +1,1019 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+        .theme{
+            width: 100%;
+            margin: auto;
+            max-width: 100%;
+            position: relative;
+        }
+        header{
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("https://images.pexels.com/photos/1450340/pexels-photo-1450340.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+            height: 100vh;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            }
+
+
+            .vacation{
+              margin-top: 150px;
+              margin-left: 1200px;
+            }
+            .logo img{
+            width: 70px;
+            float: left;
+            margin-left: 50px;
+            margin-top: 10px;
+             }
+        .logo p{
+           float: left;
+            font-size: large;
+            color: white;
+          margin-top: 90px;
+          margin-left: -80px;
+          font-family: cursive;
+          }
+        .navbar{
+            float: right;
+            list-style: none;
+            margin-top: 20px;
+            position: relative;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+        .navbar li a:hover{
+            color: pink;
+        }
+        .theme-text{
+            position: absolute;
+            color: white;
+            height: 300px;
+            margin: 20% 30%;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        
+
+        .small-text{
+            position: absolute;
+            color: white;
+            font-size: small;
+            margin: 25% 40%;
+            text-align: center;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .contact-button{
+          position: absolute;
+            margin: 29% 46%;
+        }  
+            
+          .contact{
+            padding: 13px;
+            border-radius: 5px;
+            background-color: palevioletred;
+            color: white;
+            border: none;
+            font-size: 15px;
+          }
+
+          .contact:hover{
+            background-color: orange;
+            border-color: orchid;
+          }
+
+       .row{
+           display: flex;
+          
+       }
+       .container{
+           margin-left: 50px;
+             
+       }
+       .adjust-img{
+          
+           width: 300px;
+           height: 240px;
+           margin-left: 80px;
+       }
+      .row{
+          display: flex;
+      }
+      .col{
+         
+        margin-left: 300px;
+      }
+      .adjust-icons{
+          border-radius: 50%;
+          height: 150px;
+          width: 150px;
+      }
+      .button-1{
+          border: none;
+          padding: 10px;
+         
+          background-color: orange;
+          text-align: center;
+         margin-top: 15px;
+         margin-left: 15px;
+      }
+      .button-1:hover{
+          background-color: skyblue;
+           color: snow;
+
+      }
+      
+      .price-buttons{
+        border: none;
+          outline: 0;
+          padding: 10px;
+          font-size: 10px;
+        font-family: 'cursive';
+          background-color: orange;
+          text-align: center;
+          cursor: pointer;
+          width: 70px;
+          font-size: 15px;
+          margin-top: 20px;
+          margin-left: 60px;
+      }
+      .price-buttons:hover{
+          background-color: violet;
+          color: white;
+        transition: 0.5s;
+      
+      }
+      .videos{
+          
+          height: 500px;
+          width: 100%;
+          background-color: palevioletred;
+      }
+      .video_projects{
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          margin-top: 10px;
+      }
+     .name{
+         text-align: center;
+         text-decoration: none;
+         font-size: 20px;
+         margin-top: 10px;
+     }
+     .gallery{
+         height: 500px;
+         width: 100%;
+      }
+  
+    img {
+        vertical-align: middle;
+    }
+    .myslides{
+        display: none;
+    }
+    .cursor{
+        cursor: pointer;
+    }
+    .prev,.next{
+        cursor: pointer;
+  position: absolute;
+  
+  width: auto;
+  padding: 16px;
+  margin-top: -250px;
+  
+  color:orange;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+    }
+    .next {
+      margin-right: 410px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: palevioletred;
+  color:aliceblue;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.news{
+  background-image: url('https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  height: 300px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  position: relative;
+  
+ 
+}
+.news-text{
+  position: absolute;
+            color: white;
+            margin: 4% 38%;
+            text-align: center;
+}
+
+.adjust-blog{
+  height: 100px;
+
+}
+
+
+.full-grid{
+  background-image: url('https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  
+  margin-left: 10px;
+}
+
+.grid{
+  display: grid;
+  width: 100%;
+  
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+ 
+}
+
+.grid-item{
+  background-color : white;
+   border-radius: 0.4em;
+   overflow: hidden;
+   box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: 0.2s;
+   height: 600px;
+   width: 400px;
+
+}
+.grid-item:hover {
+  transform: translate(-0.6%);
+  box-shadow: 0 4rem 8rem rgba(0,0,0,0.6);
+}
+
+.card-img{
+  display: block;
+  width: 10px;
+  height: 50px;
+  object-fit: cover;
+}
+.card-content{
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+.card-text{
+  font-size: 17px;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  margin-top: 10;
+}
+
+.card-btn {
+  display: block;
+ margin-left:70px;
+  width: 60%;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color : brown;
+  background-color: wheat;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover, .card-btn:active{
+background-color: violet;
+}
+
+.card-btn:hover span, .card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+
+.shade{
+  background-image: url('https://i.pinimg.com/originals/f1/75/ca/f175ca043852ec009faef08945cd5064.jpg');
+  background-position: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.letter{
+  height: 40px;
+  width: 350px;
+  margin-left: 500px;
+  margin-top: 140px; 
+  
+}
+
+.letter-button{
+  padding: 12px;
+  border: none;
+  background-color: tomato;
+  color: aliceblue;
+  width: 80px;
+}
+.letter-button:hover{
+  background-color: palevioletred;
+  color: bisque;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+
+
+
+
+.full-contact{
+  width: 100%;
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	background-color: palevioletred;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in
+{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+
+
+
+.contact-form
+{
+	width: 400px;
+	height: auto;
+	flex: 50%;
+	padding: 30px;
+	text-align: center;
+
+}
+.contact-form h1
+{
+	margin-bottom: 10px;
+}
+
+.contact-form-txt
+{
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 50px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.contact-form-txt::placeholder
+{
+	color: #aaa;
+}
+.contact-form-textarea
+{
+	width: 100%;
+	height: 130px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 10px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+.contact-form-textarea::placeholder
+{
+	color: #aaa;
+}
+
+.contact-form-btn
+{
+	width: 100%;
+	border:none;
+	outline: none;
+	border-radius: 50px;
+	background: tomato;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+
+.footer ul{
+  list-style: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  border-radius: 50%;
+}
+
+.fa-instagram{
+background: #dd4b39;
+color: white;
+}
+
+.fa-facebook{
+background: #3b5998;
+color: white;
+}
+.fa-twitter{
+background: #55ACEE;
+color: white;
+}
+.fa-linkedin{
+background: #007bb5;
+color: white;
+}
+
+
+.blog-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  
+}
+
+
+
+.blog-button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: tomato;
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  font-size: 18px;
+}
+
+.blog-card{
+  padding: 50px;
+  
+  transition: transform .2s;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.blog-card:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="theme">
+           <div class="logo">
+              <img src="https://cdn0.iconfinder.com/data/icons/holidays-icons-rounded/110/Travel-Bag-512.png" alt=""> 
+              <p>Travacation</p>
+           </div>
+           <ul class="navbar">
+             <li><a href="#">HOME</a></li>
+             <li><a href="#">VACATION</a></li>
+             <li><a href="#">PRICING</a></li>
+             <li><a href="#">TEAM</a></li>
+             <li><a href="#">BLOG</a></li>
+             <li><a href="#">CONTACT</a></li>
+           </ul>
+        </div>
+        <div class="theme-text w3-animate-left">
+            <h1 style="font-family: lucida handwriting;">Make your tour amazing with us</h1>
+        </div>
+        <br>
+        <div class="small-text">
+          <p>Plan and book your perfect trip with exper advice,<br> travel tips, destination information from us</p>
+
+        </div>
+        <div class="contact-button">
+          <button class="contact">contact us</button>
+        </div>
+       
+    </header>
+    <br>
+    <div class="welcome" style="text-align: center;">
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: orchid;">Welcome to Travacation</h1>
+    </div>
+    <br>
+    <div class="container">
+       <div class="row">
+           <div class="col-sm-4">
+             <h2 style="margin-left: 250px; text-decoration: none; font-size: 20px; font-family: cursive; color: tomato;"> Let us create an inspiring experience as <br> you enjoy a personally themed adventure <br> with a professional guide created to your <br> interests. Whether a one-day-trip or <br>multiple journey, you'll be  privilaged to <br>enjoy this ultimate luxury to explore Europe <br>with an expert. </h2>
+           </div>
+           <div class="col-sm-4">
+               <img class="adjust-img" src="https://thumbs.dreamstime.com/b/cute-tourist-male-character-holding-map-hiking-tourist-man-large-backpack-background-mountain-landscape-vecto-113045702.jpg" alt="">
+        </div>
+       </div>
+    </div> 
+    <br> <br> 
+    <div class="contain" style="margin-right: 170px;">
+    <div class="container2">
+        <div class="row">
+            <div class="col">
+             <div class="set">
+                 <img class="adjust-icons" src="https://cdn2.iconfinder.com/data/icons/outdoors-people-scenes/64/man_looking_through_guide-512.png" alt=""> <br> 
+                 <h3 style="text-align: center; color: tomato;">Tourist Guide</h3> <br>
+                 <p>We provide our clients with such a service as tourist Guide.  Its main goal is to ensure people with all  necessary information any time he needs. This service is similar to Customer Support with emphasis on travelling. </p>
+                 <button class="button-1" type="button">Learn More</button>
+             </div>
+            </div>
+            <div class="col">
+                <div class="set">
+                    <img class="adjust-icons" src="https://image.flaticon.com/icons/png/128/594/594106.png" alt=""> <br>
+                    <h3 style="text-align: center;  color: tomato;">Best hotels</h3> <br>
+                    <p>We guarantee the best hotels  and very comfortable rooms, which will be appreciated by every traveller. You will be absolutely happy with the hotel and will have a wonderful vacation there.</p> <br>
+                    <button class="button-1" type="button">Learn More</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="set">
+                    <img class="adjust-icons" src="https://p7.hiclipart.com/preview/590/101/244/airplane-flight-computer-icons-aeroplane-icon.jpg" alt=""> <br>
+                    <h3 style="text-align: center;  color: tomato;">Flight tickets</h3> <br>
+                    <p>You can book tickets on any plane online via our booking system. Here you have an opportunity to select your transport operator. Our representatives will help you with the details.</p>  <br>
+                    <button class="button-1" type="button">Learn More</button>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        
+    </div>
+   </div>
+
+     <br> <br><br>
+     <div class="project" style="text-align: center;  height: 800;">
+         <h1 style="font-family: cursive; color: crimson;">Popular Destinations</h1> 
+         <div class="full-grid" style="height: 800px; margin-left: -10px;">
+     
+
+     <div class="grid">
+       
+       <div class="grid-item" style="margin-left: 70px;">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="height: 400px;"/>
+          <div class="card-content">
+            <h5 class="card-header">Maldives</h5>
+            <p class="card-text">
+              The Maldives is a nation of islands in the Indian Ocean.
+            </p>
+            <button class="card-btn">
+              Visit Now <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+       </div>
+       <div class="grid-item" style="margin-left: 40px;">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/267104/pexels-photo-267104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" style="height: 400px;"/>
+          <div class="card-content">
+            <h5 class="card-header">Switzerland</h5>
+            <p class="card-text">
+              Switzerland, officially the Swiss Confederation, is a landlocked country.
+            </p>
+            <button class="card-btn" style="margin-left: 70px;">
+              Visit Now <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+       </div>
+       <div class="grid-item" >
+        <div class="card">
+          <img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" style="height: 400px;"/>
+          <div class="card-content">
+            <h5 class="card-header">Indonesia</h5>
+            <p class="card-text">
+              The country ranks fourth out of the top 25 destinations in the world in 2018.
+            </p>
+            <button class="card-btn"  style="margin-left: 80px;">
+              Visit Now <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+       </div>
+     </div>
+         </div>
+    
+  </div>
+   
+  
+<div class="shade"> 
+ <h1 style="text-align: center; margin-top: 100px; ">Pricing Table</h1>
+ <br>
+ <br>
+ <div class="price-content"  style="margin-left: 380px;">
+     <div class="row-4" style="display: flex;">
+         <div class="col" style="margin-left: 40px;">
+           <h2 style="color: tomato;">STANDARD PLAN</h2> <br>
+           <p style="color: darkblue; text-align: center;">100$</p> <br>
+           <p style="color: 	#00001f; text-align: center; font-size: 20px;">Flight tickets <br><br>hotel<br> <br> Additional Charges<br></p>
+           <button class="price-buttons">BOOK</button>
+         </div>
+         <div class="col" style="margin-left: 40px;">
+           
+             <h2 style="color: tomato;">BUSINESS PLAN</h2> <br>
+             <p style="color: brown; text-align: center;">350$</p> <br>
+             <p style="color: #00001f; text-align: center; font-size: 20px;">Flight tickets <br><br>hotel <br><br>Additional Charges<br></p>
+             <button class="price-buttons">BOOK</button>
+        </div>
+        <div class="col" style="margin-left: 40px;"> 
+            
+             <h2 style="color: tomato;">PREMIUM PLAN</h2> <br>
+             <p style="color: brown; text-align: center;">550$</p> <br>
+             <p style="color: #00001f; text-align: center; font-size: 20px;">Flight tickets <br><br>hotel <br><br>Additional Charges<br></p>
+             <button class="price-buttons">BOOK</button>
+        </div>
+     </div>
+ </div>
+ </div>
+   <br>
+   <br>
+ <div class="videos">
+    <div class="video_projects">
+        <h1>Video Playlist</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4" style="margin-left: 50px;margin-top: 70px;">
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/hv4bcWwnu1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-4" style="margin-left: 40px;margin-top: 70px;">
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/-epdGVtEMg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-4" style="margin-left: 40px;margin-top: 70px;">
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/zLeLttVbFs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+ </div>
+ <br>
+  <h1 style="text-align: center; font-family: lucida handwriting; color: tomato;">Our Team</h1> <br> <br>
+  <div class="team" style="margin-left: 460px;">
+      <div class="row">
+          <div class="col-new" style="margin-right: 40px;">
+            <img src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png" alt="" width="150px;" style="border-radius:50%;">
+          
+           <div class="name">
+            <p style="color: orangered;"> <b>Prabhas</b></p>
+            <p>CEO</p>
+
+           </div>
+        </div>
+          <div class="col-new" style="margin-right: 40px; margin-left: 50px;">
+         <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg" alt="" width="150px;" style="border-radius:50%">
+         <div class="name">
+            <p style="margin-right: 10px; color: orangered;"><b>Chaitanya</b></p>
+            <p>CO_FOUNDER <br>(Marketing Manager)</p>
+           </div>
+        </div>
+
+        <div class="col-new" style="margin-right: 40px; margin-left: 50px;">
+       <img src="https://cdn3.vectorstock.com/i/thumb-large/92/77/faceless-businessman-avatar-man-in-suit-with-blue-vector-13569277.jpg" alt="" width="150px;" style="border-radius:50%">
+       <div class="name">
+        <p style="color: orangered;"><b>Hrithik</b></p>
+        <p>Tour Guide</p>
+       </div>   
+    </div>
+      </div>
+  </div>
+  <br>
+  
+  <div class="team" style="margin-left: 430px;">
+    <div class="row">
+        <div class="col-new" style="margin-right: 40px;">
+          <img src="https://cdn2.vectorstock.com/i/thumb-large/97/81/male-anonymous-avatar-person-userpic-web-profile-vector-23379781.jpg" alt="" width="200px;"  style="border-radius:50%">
+          <div class="name">
+            <p style="color: orangered;"><b>Arun</b></p>
+            <p>Travel Agent</p>
+           </div>
+        </div>
+        <div class="col-new" style="margin-right: 40px;">
+       <img src="https://cdn5.vectorstock.com/i/thumb-large/06/74/bald-head-businessman-avatar-man-face-profile-icon-vector-21960674.jpg" alt="" width="200px;" style="border-radius:50%">
+       <div class="name">
+        <p style="color: orangered;"><b>Roshan</b></p>
+        <p>Hotel Manager</p>
+       </div>
+    </div>
+
+      <div class="col-new" style="margin-left: 30px;">
+     <img src="https://cdn1.vectorstock.com/i/thumb-large/06/70/brunette-businessman-avatar-man-face-profile-icon-vector-21960670.jpg" alt="" width="200px;" style="border-radius:50%">
+     <div class="name">
+        <p style="color: orangered;"><b>akshay</b></p>
+        <p>Casino Manager</p>
+       </div>
+    </div>
+    </div>
+</div>
+<br>
+
+
+
+<div class="full-gallery" style="background-color: lightgray; height: 750px;">
+
+
+
+ <div class="gallery" style="width: 50%; margin-left: 350px; display: flex;">
+    
+    
+    
+     <div class="inside-gallery" style="margin-top: 50px;">
+        <h1 style="text-align:center; margin-bottom: 25px; color: tomato; font-family: cursive;">Famous places</h1>
+
+        <div class="container-new">
+          <div class="mySlides">
+            
+            <img src="https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            
+            <img src="https://images.pexels.com/photos/1450363/pexels-photo-1450363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            
+            <img src="https://images.pexels.com/photos/3601426/pexels-photo-3601426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            
+            <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+           
+            <img src="https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+           
+            <img src="https://images.pexels.com/photos/2261943/pexels-photo-2261943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://images.pexels.com/photos/1450363/pexels-photo-1450363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://images.pexels.com/photos/3601426/pexels-photo-3601426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%" onclick="currentSlide(4)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" style="width:100%" onclick="currentSlide(5)" alt="">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="https://images.pexels.com/photos/2261943/pexels-photo-2261943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%" onclick="currentSlide(6)" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+     </div>
+ </div>
+</div>
+<br>
+<br>
+
+<div class="news">
+   <div class="news-text">
+     <h1>Newsletter Signup</h1>
+  </div>
+  
+ <div class="news-box">
+ <input type="text" class="letter" placeholder="abc@example.com">
+  <button type="button" class="letter-button">signup</button>
+ </div>
+
+</div>
+
+<br>
+<br>
+<h1 style="text-align: center;">Blog</h1> <br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="blog-card" style="margin-left: 100px;">
+        <img src="https://images.pexels.com/photos/358358/pexels-photo-358358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <br>
+        <h3 style="color: crimson;">Budget Trips for winter Breaks</h3> <br>
+        <p>Budget trip doesn't mean boring!
+        There are numerous palces worth visiting
+            even if you dont have much money.</p> <br>
+        <p><button class="Blog-button">Read More</button></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="blog-card" style="margin-left: 150px;">
+        <img src="https://images.pexels.com/photos/290597/pexels-photo-290597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <h3 style="color: crimson;">4 Places to visit</h3> <br>
+        <p>Summer holidays is a great occasion to travel somewhere. You can either go somewhere with your family or friends.</p>
+        <br>
+        <p><button class="Blog-button">Read More</button></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="blog-card" style="margin-left: 150px;">
+        <img src="https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <h3 style="color: crimson;">famous places not seen before?</h3> <br>
+        <p>you can visit some of the best places which you have been never seen. you can travel with your friends.</p>
+        <br>
+        <p><button class="Blog-button">Read More</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   
+<br> <br> <br> <br> <br> <br> 
+<div class=full-map>
+  <div class="row">
+    <div class="col-sm-6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124079.83130812035!2d79.35476013581854!3d13.627642647373886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b0f88620427%3A0xcf4152d1daca0cac!2sTirupati%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1625917051012!5m2!1sen!2sin" width="700" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-sm-6">
+<div class="full-contact" style="width: 820px; height: 650px;">
+<div class="contact-in" style="width: 400px;">
+ <div class="contact-form">
+    <h1>Contact Us</h1>
+    <form>
+      <p style="margin-right: 290px;">Name</p>
+      <input type="text" placeholder="Name" class="contact-form-txt" style="margin-top: 10px;"/>
+      <p style="margin-right: 290px;">Email</p>
+      <input type="text" placeholder="Email" class="contact-form-txt" style="margin-top: 10px;" />
+      <p style="margin-right: 290px;">Subject</p>
+      <input type="text" placeholder="Subject" class="contact-form-txt" style="margin-top: 10px;" />
+      <p style="margin-right: 290px;">Message</p>
+      <textarea placeholder="Message" class="contact-form-textarea" style="margin-top: 10px;"></textarea>
+      <input type="submit" name="Submit" class="contact-form-btn" style="margin-top: 10px;"/>
+    </form>
+  </div>
+  
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="footer" style="height: 200px; margin-top: 50px;">
+  <div class="row" style="margin-right: 200px;">
+    <div class="col">
+      <ul>
+        <li><h2>OFFICE ADDRESS</h2></li> <br>
+        <li>Super Street, 1243</li>
+        <li>Hytech colony</li>
+        <li>dream city</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <li><h2 style="margin-bottom: 15px;">Follow US</h2></li> 
+       <a href="#" class="fa fa-instagram"></a>
+       <a href="#" class="fa fa-facebook"></a> 
+       <a href="#" class="fa fa-twitter"></a>
+       <a href="#" class="fa fa-linkedin"></a>
+      </ul>
+      
+    </div>
+    <div class="col">
+      <ul>
+        <li><h2>CONTACT US</h2></li> <br>
+        <li>978767889</li>
+        <li>vacation@gmail.com</li>
+        <li>travel@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
